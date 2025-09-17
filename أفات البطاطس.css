@@ -104,6 +104,9 @@ font-size: 1.5rem
 .card p { margin: 5px 0; }
 .card a { color: #d84315; text-decoration: none; }
 .card a:hover { text-decoration: underline; }
+.footer{
+  align-items: center;
+}
 
 @media(max-width: 1023px) {
 header{

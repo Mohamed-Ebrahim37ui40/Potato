@@ -1,0 +1,113 @@
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px; /* أو حسب التصميم */
+  background-color: #2E8B57; /* لون ثابت، غيّره حسب رغبتك */
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 30px;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(8, 8, 8, 0.75);
+}
+
+hr{
+  margin-top: 100px;
+}
+
+section{
+  padding-top:60px ;
+}
+.Header-title{
+  margin-right: 60px;
+  color: black;
+  font-size: 1.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0px 4px 4px rgba(250, 249, 249, 0.678);
+}
+
+
+/* تنسيق القائمة */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  margin-left: 10px;
+  margin-right:  11px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: greenyellow;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  touch-action:pan-x;
+
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display:flow-root;
+}
+
+body { font-family: 'Segoe UI', sans-serif; direction: rtl; background-color: #8B8B8B; padding: 20px;
+h1 { color: #fff; text-align: center; font-size: 2rem;}
+h2 { color: #fff; margin-top: 60px;font-size: 2rem; }
+body {
+margin: 0;
+padding-top: 90px; /* نفس ارتفاع الهيدر */
+}
+
+.card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+padding: 15px;
+margin-bottom: 20px;
+font-size: 1.5rem
+}
+.card h3 { margin-top: 0; color: #388e3c; }
+.card p { margin: 5px 0; }
+.card a { color: #d84315; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+@media(max-width: 1023px) {
+header{
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+}
